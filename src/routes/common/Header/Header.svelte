@@ -17,8 +17,9 @@
         align-items: center;
         column-gap: 20px;
         height: 160px;
-        width: 100vw;
+        width: 1130px;
         padding: 0 30px;
+        margin: 0 auto;
         box-sizing: border-box;
     }
 </style>
