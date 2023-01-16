@@ -16,16 +16,19 @@
 <style>
     .search-box {
         height: 56px;
+        width: 586px;
         border: 2px solid #19ce60;
         display: flex;
+        justify-content: space-between;
     }
     .search-box .search-input {
         position: relative;
+        flex: 1;
     }
     .search-box .search-input input {
         border: none;
         box-sizing: border-box;
-        width: 444px;
+        width: 474px;
         height: 100%;
         padding: 15px 13px;
     }
