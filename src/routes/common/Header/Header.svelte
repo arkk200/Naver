@@ -11,7 +11,7 @@
 </header>
 
 <style>
-    header {
+    header{
         position: relative;
         display: flex;
         align-items: center;
@@ -20,6 +20,6 @@
         width: 1130px;
         padding: 0 30px;
         margin: 0 auto;
-        box-sizing: border-box;
+        border-bottom: 1px solid #e4e8eb;
     }
 </style>
