@@ -5,13 +5,18 @@
 
 </script>
 <header>
-    <Logo />
-    <Search />
-    <Service />
+    <div>
+        <Logo />
+        <Search />
+        <Service />
+    </div>
 </header>
 
 <style>
-    header{
+    header {
+        border-bottom: 1px solid #e4e8eb;
+    }
+    header > div{
         position: relative;
         display: flex;
         align-items: center;
@@ -20,6 +25,6 @@
         width: 1130px;
         padding: 0 30px;
         margin: 0 auto;
-        border-bottom: 1px solid #e4e8eb;
+        box-sizing: border-box;
     }
 </style>
