@@ -1,10 +1,17 @@
+<script lang="ts">
+    export let form: "tile" | "list";
+    function onChange(e: Event) {
+        form = ((e.target as HTMLInputElement).value) as "tile" | "list";
+    }
+</script>
+
 <div class="view-radios">
     <label>
-        <input name="frame" type="radio" checked />
+        <input on:change={onChange} name="frame" value="list" type="radio" checked />
         <img src="/images/NewsStand/listIcon.png" alt="list-icon" />
     </label>
     <label>
-        <input name="frame" type="radio" />
+        <input on:change={onChange} name="frame" value="tile" type="radio" />
         <img src="/images/NewsStand/tileIcon.png" alt="tile-icon" />
     </label>
     <a href="/">

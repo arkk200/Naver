@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
     import PressesSelect from "./PressesSelect.svelte";
     import ViewRadios from "./ViewRadios.svelte";
-
+    export let form: "tile" | "list";
 </script>
 
 <div class="news-stand-title">
     <PressesSelect />
-    <ViewRadios />
+    <ViewRadios bind:form />
 </div>
 
 <style>
