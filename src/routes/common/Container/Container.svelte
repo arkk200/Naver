@@ -9,6 +9,8 @@
 
 <style>
     .container {
+        width: 1190px;
+        margin: 0 auto;
         padding: 20px 30px;
     }
 </style>
