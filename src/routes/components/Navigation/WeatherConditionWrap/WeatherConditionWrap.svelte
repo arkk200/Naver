@@ -3,12 +3,19 @@
     import WeatherCondition from "./WeatherCondition.svelte";
 
 </script>
-<div class="condition">
-    <DustCondition />
-    <WeatherCondition />
+
+<div class="weather-condition-wrap">
+    <div class="condition">
+        <DustCondition />
+        <WeatherCondition />
+    </div>
 </div>
 
 <style>
+    .weather-condition-wrap {
+        height: 52px;
+        overflow: hidden;
+    }
     .condition {
         animation: slide 14s infinite;
     }

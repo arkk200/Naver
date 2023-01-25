@@ -1,8 +1,9 @@
 <script lang="ts">
-    let page:number = 4
+    let page:number = 1
 </script>
 
 <div class="tile">
+    
     {#if page > 1}
     <button class="prev" on:click={() => page--}>
         <img src="/images/arrow.png" alt="prev" />
@@ -13,28 +14,37 @@
         <img src="/images/arrow.png" alt="prev" />
     </button>
     {/if}
+
     {#if page === 1}
     <div class="page page1">
         {#each new Array(24) as _}
-            <img src="/images/NewsStand/nbclogo.png" alt="nbclogo" />
+            <div>
+                <img src="/images/NewsStand/nbclogo.png" alt="nbclogo" />
+            </div>
         {/each}
     </div>
     {:else if page === 2}
     <div class="page page2">
         {#each new Array(24) as _}
-            <img src="/images/NewsStand/nbslogo.png" alt="nbclogo" />
+            <div>
+                <img src="/images/NewsStand/nbslogo.png" alt="nbclogo" />
+            </div>
         {/each}
     </div>
     {:else if page === 3}
     <div class="page page3">
         {#each new Array(24) as _}
-            <img src="/images/NewsStand/nnnlogo.png" alt="nbclogo" />
+            <div>
+                <img src="/images/NewsStand/nnnlogo.png" alt="nbclogo" />
+            </div>
         {/each}
     </div>
     {:else if page === 4}
     <div class="page page4">
         {#each new Array(24) as _}
-            <img src="/images/NewsStand/nmologo.png" alt="nbclogo" />
+            <div>
+                <img src="/images/NewsStand/nmologo.png" alt="nbclogo" />
+            </div>
         {/each}
     </div>
     {/if}
@@ -75,10 +85,21 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        align-items: center;
-        justify-items: center;
+        border-collapse: collapse;
     }
+    
+    .page div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid #e4e8eb;
+    }
+
     .page img {
         height: 20px;
+        position: relative;
+        user-select: none;
     }
 </style>

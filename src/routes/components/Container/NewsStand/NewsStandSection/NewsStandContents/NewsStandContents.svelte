@@ -7,9 +7,9 @@
 </script>
 
 <section>
-    {#if form === "tile"}
-        <NewsStandTile />
-    {:else if form === "list"}
+    {#if form === "list"}
         <NewsStandList />
+    {:else if form === "tile"}
+        <NewsStandTile />
     {/if}
 </section>

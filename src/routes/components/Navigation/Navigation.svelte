@@ -1,14 +1,12 @@
 <script>
-    import Condition from "./Condition/Condition.svelte";
+    import Condition from "./WeatherConditionWrap/WeatherConditionWrap.svelte";
 import Shortcuts from "./Shortcuts/Shortcuts.svelte";
 
 </script>
 <nav>
     <div>
         <Shortcuts />
-        <div class="condition-wrap">
-            <Condition />
-        </div>
+        <Condition />
     </div>
 </nav>
 
@@ -26,9 +24,5 @@ import Shortcuts from "./Shortcuts/Shortcuts.svelte";
         align-items: center;
         justify-content: space-between;
         font-size: 15px;
-    }
-    .condition-wrap {
-        height: 52px;
-        overflow: hidden;
     }
 </style>
