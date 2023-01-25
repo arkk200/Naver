@@ -6,9 +6,7 @@ import NewsMedia from "./NewsMedia.svelte";
 
 <header class="news-stand-header">
     <NewsMedia />
-    <div class="news-header-contents-wrap">
-        <NewsHeaderContents />
-    </div>
+    <NewsHeaderContents />
     <Links />
 </header>
 
@@ -19,10 +17,5 @@ import NewsMedia from "./NewsMedia.svelte";
         border: 1px solid #DAE1E6;
         display: flex;
         align-items: center;
-    }
-
-    .news-header-contents-wrap {
-        height: 24px;
-        overflow: hidden;
     }
 </style>

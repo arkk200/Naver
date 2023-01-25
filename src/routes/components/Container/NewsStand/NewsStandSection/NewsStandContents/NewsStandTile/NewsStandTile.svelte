@@ -1,4 +1,6 @@
 <script lang="ts">
+    import NewsStandTilePage from "./NewsStandTilePage/NewsStandTilePage.svelte";
+
     let page:number = 1
 </script>
 
@@ -16,37 +18,13 @@
     {/if}
 
     {#if page === 1}
-    <div class="page page1">
-        {#each new Array(24) as _}
-            <div>
-                <img src="/images/NewsStand/nbclogo.png" alt="nbclogo" />
-            </div>
-        {/each}
-    </div>
+        <NewsStandTilePage src="/images/NewsStand/nbclogo.png" alt="nbclogo" />
     {:else if page === 2}
-    <div class="page page2">
-        {#each new Array(24) as _}
-            <div>
-                <img src="/images/NewsStand/nbslogo.png" alt="nbclogo" />
-            </div>
-        {/each}
-    </div>
+        <NewsStandTilePage src="/images/NewsStand/nbslogo.png" alt="nbslogo" />
     {:else if page === 3}
-    <div class="page page3">
-        {#each new Array(24) as _}
-            <div>
-                <img src="/images/NewsStand/nnnlogo.png" alt="nbclogo" />
-            </div>
-        {/each}
-    </div>
+        <NewsStandTilePage src="/images/NewsStand/nnnlogo.png" alt="nnnlogo" />
     {:else if page === 4}
-    <div class="page page4">
-        {#each new Array(24) as _}
-            <div>
-                <img src="/images/NewsStand/nmologo.png" alt="nbclogo" />
-            </div>
-        {/each}
-    </div>
+        <NewsStandTilePage src="/images/NewsStand/nmologo.png" alt="nmologo" />
     {/if}
 </div>
 
@@ -77,29 +55,5 @@
         right: -13px;
         transform: translateY(-50%);
         box-shadow: 0 2px 3px 1px #ddd;
-    }
-
-    .page {
-        width: 750px;
-        height: 260px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        border-collapse: collapse;
-    }
-    
-    .page div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 0.5px solid #e4e8eb;
-    }
-
-    .page img {
-        height: 20px;
-        position: relative;
-        user-select: none;
     }
 </style>

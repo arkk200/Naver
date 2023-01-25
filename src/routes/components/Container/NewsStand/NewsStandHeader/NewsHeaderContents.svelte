@@ -1,13 +1,20 @@
-<div class="news-header-contents">
-    <div>일론머스크, 트위터에서 마스토톤으로 이동하겠다 밝혀</div>
-    <div>부산소마고 밤돌이로 팀, 신입생 모집중</div>
-    <div>프론트엔드 개발자들, 스벨트킷 쓰고 암 나았다는 증언 속출</div>
-    <div>한화, 1달러에 1450원까지 치솟아</div>
+<div class="news-header-contents-wrap">
+    <div class="news-header-contents">
+        <div>일론머스크, 트위터에서 마스토톤으로 이동하겠다 밝혀</div>
+        <div>부산소마고 밤돌이로 팀, 신입생 모집중</div>
+        <div>프론트엔드 개발자들, 스벨트킷 쓰고 암 나았다는 증언 속출</div>
+        <div>한화, 1달러에 1450원까지 치솟아</div>
+    </div>
 </div>
 
+
 <style>
+    .news-header-contents-wrap {
+        height: 24px;
+        overflow: hidden;
+    }
     .news-header-contents {
-        animation: slide 35s infinite;
+        animation: slide 20s infinite;
     }
     @keyframes slide {
         from {
