@@ -16,9 +16,9 @@
         column-gap: 12px;
         div {
             display: flex;
-            column-gap: 2px;
+            column-gap: 6px;
             align-items: center;
-            color: #19ce60;
+            color: var(--naver-color);
             font-family: 'Malgun Gothic';
             img {
                 height: 20px;

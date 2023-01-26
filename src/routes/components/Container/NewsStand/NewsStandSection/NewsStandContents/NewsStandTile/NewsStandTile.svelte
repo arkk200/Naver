@@ -1,5 +1,5 @@
 <script lang="ts">
-    import NewsStandTilePage from "./NewsStandTilePage/NewsStandTilePage.svelte";
+    import NewsStandTilePage from "./NewsStandTilePage.svelte";
 
     let page:number = 1
 </script>

@@ -14,4 +14,7 @@
     .wrap {
         min-width: 1190px;
     }
+    :global(:root) {
+        --naver-color: #19ce60;
+    }
 </style>

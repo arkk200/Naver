@@ -71,7 +71,7 @@
                             color: orange;
                         }
                         &:nth-child(4) {
-                            color: #19ce60;
+                            color: var(--naver-color);
                         }
                     }
                 }

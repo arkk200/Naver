@@ -15,9 +15,9 @@
 
 <style lang="scss">
     .search-box {
-        height: 56px;
+        height: 50px;
         width: 586px;
-        border: 2px solid #19ce60;
+        border: 2px solid var(--naver-color);
         display: flex;
         justify-content: space-between;
 
@@ -52,9 +52,9 @@
             outline: none;
         }
         button {
-            width: 56px;
-            height: 56px;
-            background-color: #19ce60;
+            width: 50px;
+            height: 50px;
+            background-color: var(--naver-color);
             border: none;
             img {
                 width: 22px;
