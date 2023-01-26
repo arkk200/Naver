@@ -9,7 +9,7 @@
 
 <style>
     .container {
-        width: 1190px;
+        width: 1130px;
         margin: 0 auto;
         padding: 20px 30px;
     }

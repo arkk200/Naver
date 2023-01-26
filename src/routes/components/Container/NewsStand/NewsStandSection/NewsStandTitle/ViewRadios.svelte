@@ -19,23 +19,23 @@
     </a>
 </div>
 
-<style>
+<style lang="scss">
     .view-radios {
         display: flex;
         align-items: center;
         column-gap: 18px;
-    }
-    .view-radios label {
-        display: flex;
-        align-items: center;
-    }
-    .view-radios label input {
-        display: none;
-    }
-    .view-radios label input:checked ~ img {
-        filter: invert(38%) sepia(58%) saturate(870%) hue-rotate(192deg) brightness(85%) contrast(84%);
-    }
-    .view-radios img {
-        width: 14px;
+        label {
+            display: flex;
+            align-items: center;
+            input {
+                display: none;
+                &:checked ~ img {
+                    filter: invert(38%) sepia(58%) saturate(870%) hue-rotate(192deg) brightness(85%) contrast(84%);
+                }
+            }
+        }
+        img {
+            width: 14px;
+        }
     }
 </style>

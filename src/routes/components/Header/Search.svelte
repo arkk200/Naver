@@ -13,49 +13,52 @@
     </button>
 </div>
 
-<style>
+<style lang="scss">
     .search-box {
         height: 56px;
         width: 586px;
         border: 2px solid #19ce60;
         display: flex;
         justify-content: space-between;
-    }
-    .search-box .search-input {
-        position: relative;
-        flex: 1;
-    }
-    .search-box .search-input input {
-        border: none;
-        box-sizing: border-box;
-        width: 474px;
-        height: 100%;
-        padding: 15px 13px;
-    }
-    .search-box .search-input span {
-        position: absolute;
-        top: 0;
-        right: 40px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .search-box .search-input span:last-child {
-        right: 8px;
-    }
-    .search-box .search-input span img {
-        height: 24px;
-    }
-    .search-box input:focus {
-        outline: none;
-    }
-    .search-box button {
-        width: 56px;
-        height: 56px;
-        background-color: #19ce60;
-        border: none;
-    }
-    .search-box button img {
-        width: 22px;
+
+        .search-input {
+            position: relative;
+            flex: 1;
+
+            input {
+                border: none;
+                box-sizing: border-box;
+                width: 474px;
+                height: 100%;
+                padding: 15px 13px;
+            }
+            span {
+                position: absolute;
+                top: 0;
+                right: 40px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    right: 8px;
+                }
+                img {
+                    height: 24px;
+                }
+            }
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            width: 56px;
+            height: 56px;
+            background-color: #19ce60;
+            border: none;
+            img {
+                width: 22px;
+            }
+        }
     }
 </style>

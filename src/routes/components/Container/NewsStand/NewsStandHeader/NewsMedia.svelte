@@ -3,15 +3,16 @@
     <img src="/images/arrow.png" alt="arrow" />
 </div>
 
-<style>
+<style lang="scss">
     .news-media {
         display: flex;
         align-items: center;
         column-gap: 2px;
         font-size: 13px;
         font-weight: 600;
-    }
-    .news-media img {
-        width: 13px;
+
+        img {
+            width: 13px;
+        }
     }
 </style>

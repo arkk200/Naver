@@ -18,7 +18,6 @@ import Shortcuts from "./Shortcuts/Shortcuts.svelte";
         width: 1130px;
         height: 52px;
         padding: 0 30px;
-        box-sizing: border-box;
         margin: 0 auto;
         display: flex;
         align-items: center;

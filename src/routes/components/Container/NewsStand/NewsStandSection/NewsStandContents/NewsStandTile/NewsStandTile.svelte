@@ -28,7 +28,7 @@
     {/if}
 </div>
 
-<style>
+<style lang="scss">
     .tile {
         position: relative;
     }
@@ -43,17 +43,22 @@
         border-radius: 50%;
         cursor: pointer;
     }
-    .prev img, .next img {
-        height: 20px;
-    }
     .prev {
         left: -27px;
         transform: rotateZ(180deg) translateY(50%);
         box-shadow: 0 -2px 3px 1px #ddd;
+        
+        img {
+            height: 20px;
+        }
     }
     .next {
         right: -13px;
         transform: translateY(-50%);
         box-shadow: 0 2px 3px 1px #ddd;
+
+        img {
+            height: 20px;
+        }
     }
 </style>

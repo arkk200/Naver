@@ -8,46 +8,48 @@
 </div>
 
 
-<style>
+<style lang="scss">
     .news-header-contents-wrap {
         height: 24px;
         overflow: hidden;
-    }
-    .news-header-contents {
-        animation: slide 20s infinite;
-    }
-    @keyframes slide {
-        from {
-            transform: translateY(0);
+
+        .news-header-contents {
+            animation: slide 20s infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+            div {
+                height: 24px;
+                font-size: 13px;
+                line-height: 24px;
+            }
         }
-        23% {
-            transform: translateY(0);
+        @keyframes slide {
+            from {
+                transform: translateY(0);
+            }
+            23% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-25%);
+            }
+            47% {
+                transform: translateY(-25%);
+            }
+            50% {
+                transform: translateY(-50%);
+            }
+            73% {
+                transform: translateY(-50%);
+            }
+            75% {
+                transform: translateY(-75%);
+            }
+            97% {
+                transform: translateY(-75%);
+            }
         }
-        25% {
-            transform: translateY(-25%);
-        }
-        47% {
-            transform: translateY(-25%);
-        }
-        50% {
-            transform: translateY(-50%);
-        }
-        73% {
-            transform: translateY(-50%);
-        }
-        75% {
-            transform: translateY(-75%);
-        }
-        97% {
-            transform: translateY(-75%);
-        }
-    }
-    .news-header-contents:hover {
-        animation-play-state: paused;
-    }
-    .news-header-contents div {
-        height: 24px;
-        font-size: 13px;
-        line-height: 24px;
     }
 </style>

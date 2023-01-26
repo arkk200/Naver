@@ -11,30 +11,32 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
     .weather-condition-wrap {
         height: 52px;
         overflow: hidden;
-    }
-    .condition {
-        animation: slide 14s infinite;
-    }
-    .condition:hover {
-        animation-play-state: paused;
+        
+        .condition {
+            animation: slide 14s infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        @keyframes slide {
+            from {
+                transform: translateY(0);
+            }
+            47% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50%);
+            }
+            97% {
+                transform: translateY(-50%);
+            }
+        }
     }
 
-    @keyframes slide {
-        from {
-            transform: translateY(0);
-        }
-        47% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-50%);
-        }
-        97% {
-            transform: translateY(-50%);
-        }
-    }
 </style>

@@ -3,11 +3,11 @@
     <img src="/images/Navigation/showMoreArrow.png" alt="show-more" />
 </div>
 
-<style>
+<style lang="scss">
     .show-more {
         font-size: 13px;
-    }
-    .show-more img {
-        width: 7px;
+        img {
+            width: 7px;
+        }
     }
 </style>

@@ -13,7 +13,7 @@
     을지로 2가
 </div>
 
-<style>
+<style lang="scss">
     .dust-condition {
         position: relative;
         display: flex;
@@ -23,25 +23,24 @@
         height: 52px;
         font-size: 12px;
         color: #808080;
-    }
-    
-    .dust-condition span {
-        color: #505050;
-    }
-    .dust-condition i {
-        width: 1px;
-        height: 12px;
-        background-color: #E3E8EB;
-    }
-    .dust-condition div {
-        display: flex;
-        align-items: center;
-        column-gap: 5px;
-        font-size: 13px;
-        font-weight: 900;
-        color: #202020;
-    }
-    .dust-condition div img {
-        height: 18px;
+        span {
+            color: #505050;
+        }
+        i {
+            width: 1px;
+            height: 12px;
+            background-color: #E3E8EB;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            font-size: 13px;
+            font-weight: 900;
+            color: #202020;
+            img {
+                height: 18px;
+            }
+        }
     }
 </style>
