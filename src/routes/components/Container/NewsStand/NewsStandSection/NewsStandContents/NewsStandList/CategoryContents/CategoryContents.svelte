@@ -1,9 +1,13 @@
 <script>
     import ContentsHeader from "./ContentsHeader.svelte";
+    import MainNews from "./MainNews.svelte";
+    import SubNews from "./SubNews.svelte";
 
 </script>
 <div class="category-contents">
     <ContentsHeader />
+    <MainNews />
+    <SubNews />
 </div>
 
 <style lang="scss">

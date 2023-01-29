@@ -3,11 +3,11 @@
     <p>뉴스스탠드</p>
     <img src="/images/arrow.png" alt="arrow" />
     <label>
-        <input name="presses-type" type="radio" checked />
+        <input name="presses-type" type="radio" />
         <p>구독한 언론사</p>
     </label>
     <label>
-        <input name="presses-type" type="radio" />
+        <input name="presses-type" type="radio" checked />
         <p>전체언론사</p>
     </label>
 </div>
@@ -16,7 +16,7 @@
     .presses-select {
         display: flex;
         align-items: flex-end;
-        column-gap: 5px;
+        column-gap: 8px;
 
         > p {
             font-weight: 600;
@@ -27,7 +27,7 @@
             }
             &:nth-child(3) {
                 align-self: center;
-                height: 10px;
+                height: 15px;
             }
         }
         label {
@@ -47,7 +47,12 @@
             input {
                 display: none;
 
+                & ~ p {
+                    color: var(--black03);
+                    cursor: pointer;
+                }
                 &:checked ~ p {
+                    color: #000;
                     font-weight: 600;
                 }
             }

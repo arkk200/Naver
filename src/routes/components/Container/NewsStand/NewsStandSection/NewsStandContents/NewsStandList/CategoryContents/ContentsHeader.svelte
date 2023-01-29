@@ -16,7 +16,7 @@
         align-items: center;
         column-gap: 10px;
         font-size: 12px;
-        color: #808080;
+        color: var(--black04);
 
         .press-logo {
             img {

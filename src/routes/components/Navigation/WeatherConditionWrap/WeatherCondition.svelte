@@ -17,7 +17,7 @@
         column-gap: 5px;
         height: 52px;
         font-size: 12px;
-        color: #808080;
+        color: var(--black04);
         
         span {
             font-size: 13px;
@@ -25,12 +25,12 @@
             &.temp {
                 font-size: 15px;
                 font-weight: 900;
-                color: #202020;
+                color: var(--black01);
             }
         }
         .weather-status {
             font-weight: 600;
-            color: #202020;
+            color: var(--black01);
         }
         .min-temp {
             color: rgb(0, 136, 255);

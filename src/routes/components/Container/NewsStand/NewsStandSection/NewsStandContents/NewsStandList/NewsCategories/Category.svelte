@@ -1,13 +1,23 @@
 <script lang="ts">
-    export let id: string,
-        checked: boolean | undefined = undefined,
-        pagesNumber: number;
+    export let id: string, pageNumber: number, curCategoryNumber: number, page: number, pageByCategories: number[], order: number;
+
+    $: if (curCategoryNumber === order && page > pageNumber) {
+        curCategoryNumber += 1;
+        curCategoryNumber %= 7;
+        page = 1
+    } else if (page < 1) {
+        curCategoryNumber -= 1;
+        curCategoryNumber < 1 && (curCategoryNumber = 7);
+        page = pageByCategories[curCategoryNumber-1];
+    }
 </script>
 
-<input {id} type="radio" name="category" {checked} />
+<input {id} type="radio" name="category" checked={curCategoryNumber === order} on:change={() => {
+    page = 1; curCategoryNumber = order
+}} />
 <label class="category" for={id}>
     <div class="category-name"><slot></slot></div>
-    <div class="pages"><span>1</span> <span>/ {pagesNumber}</span></div>
+    <div class="pages"><span>{page}</span> <span>/ {pageNumber}</span></div>
 </label>
 
 <style lang="scss">

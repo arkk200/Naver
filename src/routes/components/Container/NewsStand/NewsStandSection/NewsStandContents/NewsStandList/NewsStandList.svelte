@@ -13,7 +13,7 @@
         <img src="/images/arrow.png" alt="prev" />
     </button>
 
-    <NewsCategories />
+    <NewsCategories bind:page />
     <CategoryContents />
 </div>
 

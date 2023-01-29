@@ -16,5 +16,9 @@
     }
     :global(:root) {
         --naver-color: #19ce60;
+        --black01: #202020;
+        --black02: #404040;
+        --black03: #505050;
+        --black04: #808080;
     }
 </style>

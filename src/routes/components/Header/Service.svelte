@@ -31,7 +31,7 @@
             font-family: 'Malgun Gothic';
             font-size: 11px;
             text-decoration: none;
-            color: #404040;
+            color: var(--black02);
         }
         > a {
             display: flex;

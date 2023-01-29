@@ -16,7 +16,7 @@
         a {
             font-size: 13px;
             text-decoration: none;
-            color: #202020;
+            color: var(--black01);
             font-weight: 600;
         }
         > a:first-child {

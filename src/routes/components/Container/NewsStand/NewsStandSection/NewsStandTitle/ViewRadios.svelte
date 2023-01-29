@@ -35,6 +35,7 @@
             }
         }
         img {
+            cursor: pointer;
             width: 14px;
         }
     }

@@ -20,6 +20,7 @@
                 animation-play-state: paused;
             }
             div {
+                color: var(--black01);
                 height: 24px;
                 font-size: 13px;
                 line-height: 24px;

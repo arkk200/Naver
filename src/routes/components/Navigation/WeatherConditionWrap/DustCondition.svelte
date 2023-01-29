@@ -22,9 +22,9 @@
         column-gap: 5px;
         height: 52px;
         font-size: 12px;
-        color: #808080;
+        color: var(--black04);
         span {
-            color: #505050;
+            color: var(--black03);
         }
         i {
             width: 1px;
@@ -37,7 +37,7 @@
             column-gap: 5px;
             font-size: 13px;
             font-weight: 900;
-            color: #202020;
+            color: var(--black01);
             img {
                 height: 18px;
             }
